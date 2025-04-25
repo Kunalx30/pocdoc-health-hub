@@ -101,7 +101,7 @@ const reviews = [
   {
     id: '1',
     doctorId: '1',
-    author: 'John D.',
+    author: 'Rahul Kapoor',
     rating: 5,
     date: '2025-03-15',
     title: 'Excellent care and professionalism',
@@ -112,7 +112,7 @@ const reviews = [
   {
     id: '2',
     doctorId: '1',
-    author: 'Mary S.',
+    author: 'Priya Patel',
     rating: 4,
     date: '2025-02-28',
     title: 'Good doctor with caring approach',
@@ -123,7 +123,7 @@ const reviews = [
   {
     id: '3',
     doctorId: '2',
-    author: 'Robert T.',
+    author: 'Amit Sharma',
     rating: 5,
     date: '2025-04-02',
     title: 'Excellent family doctor',
