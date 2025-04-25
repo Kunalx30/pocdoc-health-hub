@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import { Input } from '@/components/ui/input';
@@ -54,6 +53,46 @@ const doctors = [
     rating: 4.9,
     reviewsCount: 156,
     photo: 'https://randomuser.me/api/portraits/men/44.jpg',
+  },
+  {
+    id: '5',
+    name: 'Dr. Deepa Menon',
+    specialty: 'Gynecologist',
+    hospital: 'Women\'s Care Center',
+    experience: '18 years',
+    rating: 4.6,
+    reviewsCount: 112,
+    photo: 'https://randomuser.me/api/portraits/women/68.jpg',
+  },
+  {
+    id: '6',
+    name: 'Dr. Vikram Singh',
+    specialty: 'Orthopedic Surgeon',
+    hospital: 'Sports Medicine Clinic',
+    experience: '16 years',
+    rating: 4.7,
+    reviewsCount: 98,
+    photo: 'https://randomuser.me/api/portraits/men/61.jpg',
+  },
+  {
+    id: '7',
+    name: 'Dr. Neha Agarwal',
+    specialty: 'Dermatologist',
+    hospital: 'Skin & Wellness Center',
+    experience: '10 years',
+    rating: 4.5,
+    reviewsCount: 76,
+    photo: 'https://randomuser.me/api/portraits/women/79.jpg',
+  },
+  {
+    id: '8',
+    name: 'Dr. Arun Mehta',
+    specialty: 'Oncologist',
+    hospital: 'Cancer Research Institute',
+    experience: '22 years',
+    rating: 4.9,
+    reviewsCount: 134,
+    photo: 'https://randomuser.me/api/portraits/men/73.jpg',
   }
 ];
 
