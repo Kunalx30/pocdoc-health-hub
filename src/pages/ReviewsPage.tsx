@@ -1,7 +1,10 @@
+
 import React from 'react';
 import Layout from '../components/Layout';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Card } from '@/components/ui/card';
+import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { User, Plus } from 'lucide-react';
 import DoctorCard from '../components/doctors/DoctorCard';
 import ReviewCard from '../components/reviews/ReviewCard';
 import WriteReviewDialog from '../components/reviews/WriteReviewDialog';
