@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -11,23 +10,23 @@ import WriteReviewDialog from '../components/reviews/WriteReviewDialog';
 import TopDoctorsSection from '../components/doctors/TopDoctorsSection';
 import SearchBar from '../components/reviews/SearchBar';
 
-// Sample doctors
+// Sample doctors with Indian names and Bhilai hospitals
 const doctors = [
   {
     id: '1',
-    name: 'Dr. Priya Sharma',
+    name: 'Dr. Arun Verma',
     specialty: 'Cardiologist',
-    hospital: 'City General Hospital',
+    hospital: 'Sector 9 Hospital Bhilai',
     experience: '15 years',
     rating: 4.8,
     reviewsCount: 124,
-    photo: 'https://randomuser.me/api/portraits/women/28.jpg',
+    photo: 'https://randomuser.me/api/portraits/men/42.jpg',
   },
   {
     id: '2',
-    name: 'Dr. Rajesh Patel',
+    name: 'Dr. Rajesh Kumar',
     specialty: 'Family Medicine',
-    hospital: 'Westside Medical Center',
+    hospital: 'Sparsh Hospital Bhilai',
     experience: '12 years',
     rating: 4.5,
     reviewsCount: 89,
@@ -35,9 +34,9 @@ const doctors = [
   },
   {
     id: '3',
-    name: 'Dr. Anjali Gupta',
+    name: 'Dr. Meena Sharma',
     specialty: 'Pediatrician',
-    hospital: 'Eastside Health Clinic',
+    hospital: 'Bhilai Institute of Medical Sciences',
     experience: '8 years',
     rating: 4.7,
     reviewsCount: 67,
@@ -45,9 +44,9 @@ const doctors = [
   },
   {
     id: '4',
-    name: 'Dr. Suresh Kumar',
+    name: 'Dr. Sanjay Gupta',
     specialty: 'Neurologist',
-    hospital: 'North County Hospital',
+    hospital: 'Sai Hospital Bhilai',
     experience: '20 years',
     rating: 4.9,
     reviewsCount: 156,
@@ -55,9 +54,9 @@ const doctors = [
   },
   {
     id: '5',
-    name: 'Dr. Deepa Menon',
+    name: 'Dr. Priya Deshmukh',
     specialty: 'Gynecologist',
-    hospital: 'Women\'s Care Center',
+    hospital: 'Chandulal Chandrakar Hospital Bhilai',
     experience: '18 years',
     rating: 4.6,
     reviewsCount: 112,
@@ -65,9 +64,9 @@ const doctors = [
   },
   {
     id: '6',
-    name: 'Dr. Vikram Singh',
+    name: 'Dr. Vikram Mishra',
     specialty: 'Orthopedic Surgeon',
-    hospital: 'Sports Medicine Clinic',
+    hospital: 'Dhanwantri Hospital Bhilai',
     experience: '16 years',
     rating: 4.7,
     reviewsCount: 98,
@@ -75,9 +74,9 @@ const doctors = [
   },
   {
     id: '7',
-    name: 'Dr. Neha Agarwal',
+    name: 'Dr. Neha Joshi',
     specialty: 'Dermatologist',
-    hospital: 'Skin & Wellness Center',
+    hospital: 'Prayas Hospital Bhilai',
     experience: '10 years',
     rating: 4.5,
     reviewsCount: 76,
@@ -85,9 +84,9 @@ const doctors = [
   },
   {
     id: '8',
-    name: 'Dr. Arun Mehta',
+    name: 'Dr. Amit Sinha',
     specialty: 'Oncologist',
-    hospital: 'Cancer Research Institute',
+    hospital: 'Shri Balaji Cancer Hospital Bhilai',
     experience: '22 years',
     rating: 4.9,
     reviewsCount: 134,
@@ -95,38 +94,38 @@ const doctors = [
   }
 ];
 
-// Sample reviews
+// Sample reviews with Indian names
 const reviews = [
   {
     id: '1',
     doctorId: '1',
-    author: 'Rahul Kapoor',
+    author: 'Suresh Patel',
     rating: 5,
     date: '2025-03-15',
     title: 'Excellent care and professionalism',
-    comment: 'Dr. Sharma was extremely thorough in her examination and took the time to explain everything clearly. She answered all my questions and made me feel very comfortable. I would highly recommend her to anyone looking for a cardiologist.',
+    comment: 'Dr. Verma was extremely thorough in his examination and took the time to explain everything clearly. He answered all my questions and made me feel very comfortable. I would highly recommend him to anyone looking for a cardiologist.',
     helpful: 24,
     replies: 2,
   },
   {
     id: '2',
     doctorId: '1',
-    author: 'Priya Patel',
+    author: 'Kavita Sharma',
     rating: 4,
     date: '2025-02-28',
     title: 'Good doctor with caring approach',
-    comment: 'Dr. Sharma has a very caring approach. She spends time with patients and explains things well. The only downside is that the wait time was longer than expected.',
+    comment: 'Dr. Verma has a very caring approach. He spends time with patients and explains things well. The only downside is that the wait time was longer than expected.',
     helpful: 12,
     replies: 1,
   },
   {
     id: '3',
     doctorId: '2',
-    author: 'Amit Sharma',
+    author: 'Rajat Tiwari',
     rating: 5,
     date: '2025-04-02',
     title: 'Excellent family doctor',
-    comment: 'Dr. Patel is the best family doctor we\'ve ever had. He really cares about his patients and takes the time to get to know them. He\'s great with our kids and always provides thoughtful advice.',
+    comment: 'Dr. Kumar is the best family doctor we\'ve ever had. He really cares about his patients and takes the time to get to know them. He\'s great with our kids and always provides thoughtful advice.',
     helpful: 18,
     replies: 0,
   }
