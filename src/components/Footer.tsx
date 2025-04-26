@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -43,7 +42,8 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-primary-700 mt-8 pt-6 text-center text-primary-100 text-sm">
-          <p>© {new Date().getFullYear()} PocDoc. All rights reserved.</p>
+          <p className="mb-2">© {new Date().getFullYear()} PocDoc. All rights reserved.</p>
+          <p className="text-primary-200">Project created by Kunal, Rounak, Aryan, Kaif</p>
         </div>
       </div>
     </footer>

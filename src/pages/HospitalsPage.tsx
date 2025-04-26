@@ -6,6 +6,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { MapPin, Phone, Clock, Heart } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
+import HospitalMap from '../components/hospitals/HospitalMap';
 
 // Updated hospitals data for Bhilai
 const hospitals = [
@@ -56,6 +57,42 @@ const hospitals = [
     specialties: ['General Medicine', 'Surgery', 'Orthopedics', 'Emergency Care'],
     rating: 4.4,
     image: 'https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: '5',
+    name: 'Dhanwantri Hospital & Research Center',
+    address: 'Durg Rd, Supela, Bhilai, Chhattisgarh 490023',
+    distance: '5.2 km',
+    phone: '0788 2322444',
+    hours: '24/7',
+    emergency: true,
+    specialties: ['Cardiology', 'Nephrology', 'Urology', 'Internal Medicine'],
+    rating: 4.3,
+    image: 'https://images.unsplash.com/photo-1587351021355-a9562b4a0c0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'
+  },
+  {
+    id: '6',
+    name: 'Bhilai Institute of Medical Sciences',
+    address: 'Pendri, Bhilai, Chhattisgarh 490021',
+    distance: '6.8 km',
+    phone: '0788 2275741',
+    hours: '24/7',
+    emergency: true,
+    specialties: ['Multi Specialty', 'Emergency Care', 'Teaching Hospital', 'Research Center'],
+    rating: 4.5,
+    image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+  },
+  {
+    id: '7',
+    name: 'Sanjeevani Hospital',
+    address: 'Power House, Bhilai, Chhattisgarh 490001',
+    distance: '3.9 km',
+    phone: '0788 2324555',
+    hours: '24/7',
+    emergency: true,
+    specialties: ['General Surgery', 'Orthopedics', 'Gynecology', 'Pediatrics'],
+    rating: 4.2,
+    image: 'https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
   }
 ];
 
@@ -173,14 +210,7 @@ const HospitalsPage: React.FC = () => {
           </TabsContent>
           
           <TabsContent value="map">
-            <div className="bg-gray-100 rounded-lg p-4 h-[400px] flex items-center justify-center">
-              <div className="text-center">
-                <MapPin size={48} className="mx-auto mb-3 text-primary" />
-                <h3 className="text-lg font-medium mb-1">Map View</h3>
-                <p className="text-muted-foreground mb-3">View hospitals on an interactive map</p>
-                <p className="text-sm text-muted-foreground">Connect to Google Maps or similar service for full functionality</p>
-              </div>
-            </div>
+            <HospitalMap hospitals={filteredHospitals} />
           </TabsContent>
           
           <TabsContent value="emergency">
