@@ -14,6 +14,7 @@ import ReviewsPage from "./pages/ReviewsPage";
 import NotFound from "./pages/NotFound";
 import FAQPage from "./pages/FAQPage";
 import SupportPage from "./pages/SupportPage";
+import ContactPage from "./pages/ContactPage";
 
 const queryClient = new QueryClient();
 
