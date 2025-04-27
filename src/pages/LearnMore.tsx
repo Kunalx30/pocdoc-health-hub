@@ -25,7 +25,16 @@ const LearnMore: React.FC = () => {
               className="prose prose-lg mx-auto text-gray-700"
             >
               <p className="text-xl leading-relaxed mb-8">
-                This project is created by <span className="font-semibold text-primary-700">[Team Members Names]</span> as a major project in B.Tech.
+                This project is created by {' '}
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.8, duration: 0.5 }}
+                  className="font-semibold text-primary-700"
+                >
+                  Kunal, Rounak, Aryan, and Kaif
+                </motion.span>{' '}
+                as a major project in B.Tech.
               </p>
             </motion.div>
 
@@ -35,18 +44,26 @@ const LearnMore: React.FC = () => {
               transition={{ delay: 0.6, duration: 0.8 }}
               className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12"
             >
-              <div className="feature-card">
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+                className="feature-card"
+              >
                 <h3 className="text-xl font-semibold mb-3">Our Vision</h3>
                 <p className="text-gray-600">
                   To revolutionize healthcare management through innovative digital solutions.
                 </p>
-              </div>
-              <div className="feature-card">
+              </motion.div>
+              <motion.div 
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+                className="feature-card"
+              >
                 <h3 className="text-xl font-semibold mb-3">Our Mission</h3>
                 <p className="text-gray-600">
                   Making healthcare information accessible and manageable for everyone.
                 </p>
-              </div>
+              </motion.div>
             </motion.div>
           </motion.div>
         </div>

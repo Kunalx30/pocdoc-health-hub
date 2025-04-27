@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { LucideIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
 
 interface FeatureCardProps {
   icon: LucideIcon;
@@ -25,22 +26,29 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   className,
 }) => {
   return (
-    <div 
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: delay * 0.2, duration: 0.5 }}
+      whileHover={{ scale: 1.02 }}
       className={cn(
-        'feature-card animate-delayed-fade', 
+        'feature-card', 
         className
-      )} 
-      style={{ '--delay': delay } as React.CSSProperties}
+      )}
     >
-      <div className="mb-4 bg-primary-50 p-3 rounded-full w-12 h-12 flex items-center justify-center">
+      <motion.div 
+        whileHover={{ rotate: 360 }}
+        transition={{ duration: 0.6 }}
+        className="mb-4 bg-primary-50 p-3 rounded-full w-12 h-12 flex items-center justify-center"
+      >
         <Icon className="text-primary" size={24} />
-      </div>
+      </motion.div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-muted-foreground mb-6">{description}</p>
       <Link to={linkTo}>
-        <Button variant="outline">{buttonText}</Button>
+        <Button variant="outline" className="transition-all hover:scale-105">{buttonText}</Button>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
