@@ -8,7 +8,7 @@ import { MapPin, Phone, Clock, Heart } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import HospitalMap from '../components/hospitals/HospitalMap';
 
-// Updated hospitals data for Bhilai
+// Updated hospitals data for Bhilai with new images
 const hospitals = [
   {
     id: '1',
@@ -20,79 +20,67 @@ const hospitals = [
     emergency: true,
     specialties: ['Emergency Care', 'General Medicine', 'Surgery', 'Orthopedics'],
     rating: 4.5,
-    image: 'https://images.unsplash.com/photo-1587351021355-a9562b4a0c0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'
+    image: '/lovable-uploads/4a4082de-cf67-44d8-ab1c-520c62802915.png'
   },
   {
     id: '2',
-    name: 'Sparsh Hospital Bhilai',
-    address: 'Junwani Road, Smriti Nagar, Bhilai, Chhattisgarh 490020',
+    name: 'Dhanwantri Hospital & Research Center',
+    address: 'Durg Rd, Supela, Bhilai, Chhattisgarh 490023',
     distance: '2.3 km',
-    phone: '0788 4015555',
+    phone: '0788 2322444',
     hours: '24/7',
     emergency: true,
     specialties: ['Cardiology', 'Neurology', 'Pediatrics', 'Gynecology'],
     rating: 4.7,
-    image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+    image: '/lovable-uploads/9c136c04-ed94-4cdf-adc0-3f448071af10.png'
   },
   {
     id: '3',
-    name: 'Chandulal Chandrakar Memorial Hospital',
-    address: 'Nehru Nagar, Bhilai, Chhattisgarh 490020',
+    name: 'Sai Hospital Bhilai',
+    address: 'Zone 2, Khursipar, Bhilai, Chhattisgarh 490011',
     distance: '3.1 km',
-    phone: '0788 2295591',
+    phone: '0788 2321555',
     hours: '24/7',
     emergency: true,
     specialties: ['Multi Specialty', 'Emergency Care', 'ICU', 'Trauma Center'],
     rating: 4.6,
-    image: 'https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+    image: '/lovable-uploads/f8c5238e-ee78-4a9f-9ae7-8c7d18291b6c.png'
   },
   {
     id: '4',
-    name: 'Sai Hospital Bhilai',
-    address: 'Zone 2, Khursipar, Bhilai, Chhattisgarh 490011',
+    name: 'Chandulal Chandrakar Memorial Hospital',
+    address: 'Nehru Nagar, Bhilai, Chhattisgarh 490020',
     distance: '4.5 km',
-    phone: '0788 2321555',
+    phone: '0788 2295591',
     hours: '24/7',
     emergency: true,
     specialties: ['General Medicine', 'Surgery', 'Orthopedics', 'Emergency Care'],
     rating: 4.4,
-    image: 'https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+    image: '/lovable-uploads/f053f116-d6ed-49dc-bfbd-3151f8ceadca.png'
   },
   {
     id: '5',
-    name: 'Dhanwantri Hospital & Research Center',
-    address: 'Durg Rd, Supela, Bhilai, Chhattisgarh 490023',
-    distance: '5.2 km',
-    phone: '0788 2322444',
-    hours: '24/7',
-    emergency: true,
-    specialties: ['Cardiology', 'Nephrology', 'Urology', 'Internal Medicine'],
-    rating: 4.3,
-    image: 'https://images.unsplash.com/photo-1587351021355-a9562b4a0c0d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80'
-  },
-  {
-    id: '6',
     name: 'Bhilai Institute of Medical Sciences',
     address: 'Pendri, Bhilai, Chhattisgarh 490021',
-    distance: '6.8 km',
+    distance: '5.2 km',
     phone: '0788 2275741',
     hours: '24/7',
     emergency: true,
     specialties: ['Multi Specialty', 'Emergency Care', 'Teaching Hospital', 'Research Center'],
-    rating: 4.5,
-    image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+    rating: 4.3,
+    image: '/lovable-uploads/01417a88-5157-490a-8397-a749e4852ca0.png'
   },
   {
-    id: '7',
-    name: 'Sanjeevani Hospital',
-    address: 'Power House, Bhilai, Chhattisgarh 490001',
-    distance: '3.9 km',
-    phone: '0788 2324555',
+    id: '6',
+    name: 'Sparsh Hospital Bhilai',
+    address: 'Junwani Road, Smriti Nagar, Bhilai, Chhattisgarh 490020',
+    distance: '6.8 km',
+    phone: '0788 4015555',
     hours: '24/7',
     emergency: true,
-    specialties: ['General Surgery', 'Orthopedics', 'Gynecology', 'Pediatrics'],
-    rating: 4.2,
-    image: 'https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80'
+    specialties: ['Multi Specialty', 'Emergency Care', 'Teaching Hospital', 'Research Center'],
+    rating: 4.5,
+    image: '/lovable-uploads/016e3049-80ab-4cd4-aeef-ba396e018e11.png'
   }
 ];
 
@@ -189,7 +177,7 @@ const HospitalsPage: React.FC = () => {
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
-                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                           </svg>
                         ))}
                       </div>
@@ -267,7 +255,7 @@ const HospitalsPage: React.FC = () => {
                               fill="currentColor"
                               viewBox="0 0 20 20"
                             >
-                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-.118l1.07-3.292a1 1 0 00-.364-1.118l-2.8-2.034c-.783-.57-.38-1.81.588-.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                           ))}
                         </div>
