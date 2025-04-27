@@ -8,7 +8,7 @@ import { MapPin, Phone, Clock, Heart } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import HospitalMap from '../components/hospitals/HospitalMap';
 
-// Updated hospitals data for Bhilai with new images
+// Updated hospitals data for Bhilai with the correct image paths
 const hospitals = [
   {
     id: '1',

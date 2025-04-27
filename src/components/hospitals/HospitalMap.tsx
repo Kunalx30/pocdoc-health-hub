@@ -7,7 +7,7 @@ const HospitalMap = ({ hospitals }: { hospitals: Array<any> }) => {
   useEffect(() => {
     // Center coordinates for Bhilai, Chhattisgarh
     const bhilaiCoordinates = '21.209009,81.428497';
-    const googleMapsUrl = `https://www.google.com/maps/embed/v1/search?key=YOUR_API_KEY&q=hospitals+in+bhilai+chhattisgarh&center=${bhilaiCoordinates}&zoom=13`;
+    const googleMapsUrl = `https://www.google.com/maps/embed/v1/search?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=hospitals+in+bhilai+chhattisgarh&center=${bhilaiCoordinates}&zoom=13`;
     
     if (mapRef.current) {
       mapRef.current.src = googleMapsUrl;
@@ -24,7 +24,7 @@ const HospitalMap = ({ hospitals }: { hospitals: Array<any> }) => {
         loading="lazy"
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"
-        src="about:blank"
+        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=hospitals+in+bhilai+chhattisgarh"
       />
     </div>
   );
