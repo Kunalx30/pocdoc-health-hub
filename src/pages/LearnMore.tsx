@@ -25,7 +25,7 @@ const LearnMore: React.FC = () => {
               className="prose prose-lg mx-auto text-gray-700"
             >
               <p className="text-xl leading-relaxed mb-8">
-                This project is created by [Team Members Names] as a major project in B.Tech.
+                This project is created by <span className="font-semibold text-primary-700">[Team Members Names]</span> as a major project in B.Tech.
               </p>
             </motion.div>
 
