@@ -21,8 +21,8 @@ const HeroSection: React.FC = () => {
                   Get Started
                 </Button>
               </Link>
-              <Link to="/features">
-                <Button size="lg" variant="outline">
+              <Link to="/learn-more">
+                <Button size="lg" variant="outline" className="text-black hover:text-black">
                   Learn More
                 </Button>
               </Link>
