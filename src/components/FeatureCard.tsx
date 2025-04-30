@@ -30,9 +30,9 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: delay * 0.2, duration: 0.5 }}
-      whileHover={{ scale: 1.02 }}
+      whileHover={{ scale: 1.05, boxShadow: '0 10px 25px rgba(0,0,0,0.1)' }}
       className={cn(
-        'feature-card', 
+        'feature-card rounded-lg border border-gray-100 p-6 shadow-sm', 
         className
       )}
     >
@@ -43,10 +43,30 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       >
         <Icon className="text-primary" size={24} />
       </motion.div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-muted-foreground mb-6">{description}</p>
+      <motion.h3 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: delay * 0.2 + 0.3, duration: 0.5 }}
+        className="text-xl font-semibold mb-2"
+      >
+        {title}
+      </motion.h3>
+      <motion.p 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: delay * 0.2 + 0.4, duration: 0.5 }}
+        className="text-muted-foreground mb-6"
+      >
+        {description}
+      </motion.p>
       <Link to={linkTo}>
-        <Button variant="outline" className="transition-all hover:scale-105">{buttonText}</Button>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="inline-block"
+        >
+          <Button variant="outline" className="transition-all">{buttonText}</Button>
+        </motion.div>
       </Link>
     </motion.div>
   );
