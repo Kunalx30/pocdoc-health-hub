@@ -1,73 +1,76 @@
-# Welcome to your Lovable project
+PocDoc – A Smart Hospital Finder & Assistance System
 
-## Project info
+A modern web application designed to help users quickly locate nearby hospitals, manage patient medical records, and receive timely health reminders — all from one place.
 
-**URL**: https://lovable.dev/projects/7311fe51-2493-487f-a088-80f02ffb5709
+This application provides a seamless and intuitive healthcare assistance experience powered by modern web technologies.
 
-## How can I edit this code?
+🚀 Project Overview
 
-There are several ways of editing your application.
+PocDoc is built to make access to healthcare simpler, safer, and quicker.
+It allows users to:
 
-**Use Lovable**
+🔍 Find nearby hospitals using location
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7311fe51-2493-487f-a088-80f02ffb5709) and start prompting.
+🧾 Maintain patient health records securely
 
-Changes made via Lovable will be committed automatically to this repo.
+🗓️ Set reminders for medicines & appointments
 
-**Use your preferred IDE**
+💬 Record consulta­tion history
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🚑 Store emergency contacts
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+My goal with this project is to improve hospital discovery and digital patient assistance for everyone.
 
-Follow these steps:
+🛠️ Tech Stack Used
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+This project is built using:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Technology	Purpose
+React (TypeScript)	Frontend UI
+Vite	Build tool
+Tailwind CSS	Styling
+shadcn/ui	UI Components
+Supabase	Backend database + auth
+Node.js + npm	Development environment
+🧑‍💻 How to Run the Project Locally
+1️⃣ Clone the repository
+git clone <YOUR_REPO_URL>
 
-# Step 3: Install the necessary dependencies.
-npm i
+2️⃣ Move into project folder
+cd <PROJECT_NAME>
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3️⃣ Install dependencies
+npm install
+
+4️⃣ Start the development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The app will start locally with auto-reload support.
 
-**Use GitHub Codespaces**
+✍ How to Contribute Features
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+You can:
 
-## What technologies are used for this project?
+✔ Edit using Lovable AI
+✔ Develop using your preferred IDE
+✔ Commit directly in GitHub
+✔ Use GitHub Codespaces for cloud development
 
-This project is built with:
+All contributions are welcome.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+🌎 Deployment
 
-## How can I deploy this project?
+Deployment can be done directly via Lovable → Share → Publish.
+Once published, the link can be shared publicly.
 
-Simply open [Lovable](https://lovable.dev/projects/7311fe51-2493-487f-a088-80f02ffb5709) and click on Share -> Publish.
+Custom domain can also be mapped under:
 
-## Can I connect a custom domain to my Lovable project?
+Project → Settings → Domains → Connect Domain
 
-Yes, you can!
+📮 Contact
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+If you'd like to suggest improvements or collaborate, feel free to connect.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Developer – Kunal Chandelkar
+📧 Email: Kunalchandelkar0002@gmail.com
